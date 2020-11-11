@@ -10,7 +10,7 @@ import java.util.Scanner;
             String choixMenuPrincipal;
 
             //Choix du menu à ouvrir
-            System.out.println("---- Bienvenue sur CAR RACE. Tapez le chiffre correspondant en fonction de ce que vous voulez faire : ----");
+            System.out.println("---- Bienvenue sur CAR DE TA RACE. Tapez le chiffre correspondant en fonction de ce que vous voulez faire : ----");
             System.out.println(); // Sauter une ligne
             System.out.println("    -1 Jouer"); // Tape 1 si il veut lancer une partie
             System.out.println("    -2 Voir les règles");// Tape 2 si il veut voir les règles
