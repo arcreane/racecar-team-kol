@@ -39,6 +39,7 @@ import java.util.Scanner;
             //condition pour afficher les règles
             else if (mainMenu.equals("2")){
                 //mettre la fonction de règles
+                Rules.rules();
             }
 
             //condition pour quitter le jeu

@@ -5,7 +5,7 @@ import Vitesse.DevinerVitesse;
 
 import java.util.Scanner;
 
-public class Main  extends DevinerVitesse{
+public class Main  extends DevinerVitesse {
     Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args){
@@ -13,5 +13,7 @@ public class Main  extends DevinerVitesse{
 
         //Menu.menu();
         DevinerVitesse.tabVitesse(message);
+        Colors.choiceColors();
+
     }
 }
