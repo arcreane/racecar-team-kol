@@ -2,12 +2,12 @@ package com.company;
 
 public class Car {
 
+        void carFast(Car carFast) {
 
-    void carFast() {
+        }
 
-    }
-    void carLow(Low cLow){
+        void carLow(Car carLow){
 
-    }
+        }
 
 };
