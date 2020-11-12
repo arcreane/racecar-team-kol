@@ -10,6 +10,7 @@ public class Cars {
     private float m_fSpeed;
     private boolean m_bEventFinished;
     private float Speed;
+    public float speed;
 
 
     public Cars (){
@@ -27,11 +28,14 @@ public class Cars {
     public void check(){
 
     }
-
     public boolean isEventFinished() {
         return m_bEventFinished;
     }
 
+    public void write(){
+
+        System.out.println("Ma vitesse est de : " + speed + "km/h");
+    }
 
 
 

@@ -10,24 +10,23 @@ public class Rules {
 
 
         //Affichage des règles
-        System.out.println("Rules ae simple : ");
+        System.out.println("Les règles sont simples : ");
         System.out.println("");
-        System.out.println("It's a race car. The goal ? Finish FIRST ! ");
-        System.out.println("We have two speed's car : ");
-        System.out.println("- Type 1 for a speeding car but having 30% chance of failing components");
-        System.out.println("- Type 2 for a slow car but having 50% chance of having a speeding boost");
-        System.out.println("But it is too simple ! So during the race many events During the race, events will take place to prevent you from crossing the finish line. ");
+        System.out.println("C'est une course de voiture ! Les règles sont simples : arriver 1ER ");
+        System.out.println("Il y a 2 type de voitures : ");
+        System.out.println("- Type 1 pour une voiture rapide mais qui a  30% de chance d'avoir une panne");
+        System.out.println("- Type 2 pour une voiture lente mais vous avez 50% de chance d'avoir un boost de vitesse");
+        System.out.println("Les événements qui vous empécheront d'arriver 1er à la ligne d'arriver sont :");
         System.out.println("");
-        System.out.println("Events are : ");
-        System.out.println("For type 1 : ");
-        System.out.println("The word speed that will appear in the disorder. It will therefore have to be returned.");
+        System.out.println("Pour le type 1: ");
+        System.out.println("Votre moteur ou vos roues auront quelques difficultés durant la course. À vous de les réparer le plus rapidement possible");
         System.out.println("");
-        System.out.println("For type 2 : ");
-        System.out.println("The word speed that will appear in the disorder. It will therefore be necessary to rewrite it in the same order.");
+        System.out.println("Pour le type 2 : ");
+        System.out.println("Le mot 'VITESSE' apparaitera dans le désordre, a vous de bien le réécrire !");
         System.out.println();
-        System.out.println("Good luck in the race !");
+        System.out.println("Bonne chance dans RACE CAR ! Que le sort vous soit favorable");
         System.out.println();
-        System.out.println("For go at the main menu type R");
+        System.out.println("POur retourner au menu tapez R");
         returnMainMenu = scanner.next();
 
         //condition pour retourner au menu principal
