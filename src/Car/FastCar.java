@@ -9,8 +9,11 @@ public class FastCar extends Cars {
     double random = Math.random();
     Cars cars;
 
+        public FastCar(){
+            this.speed = 100;
+        }
+
         public void check(){
-            cars.speed = 100;
             motor = new Motor();
             //String nbList = motor.initTab();
             String nbList = "bonjour";
@@ -26,4 +29,5 @@ public class FastCar extends Cars {
 
             System.out.println("bravo");
         }
-    }
+
+}

@@ -4,16 +4,16 @@ import Vitesse.DevinerVitesse;
 import com.company.Colors;
 
 public class SlowCar extends Cars {
-DevinerVitesse devinerVitesse;
-Colors colors;
-Cars cars;
+    DevinerVitesse devinerVitesse;
+    Colors colors;
+    Cars cars;
 
+    public SlowCar() {
+        this.speed = 50;
+    }
 
-//    public SlowCar()
-                public void check(){
-            cars.speed = 50;
-            devinerVitesse = new DevinerVitesse();
-            System.out.println(devinerVitesse.initTab());
-        }
-//    }
+    public void check() {
+        devinerVitesse = new DevinerVitesse();
+        System.out.println(devinerVitesse.initTab());
+    }
 }
