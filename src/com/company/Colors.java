@@ -21,15 +21,9 @@ public class Colors {
         Scanner scannerColors = new Scanner(System.in);
         String choiceColors;
 
-        System.out.println("---- Choice your color eheh ----");
-        System.out.print("\n" + ANSI_BLUE + "BLUE" + ANSI_RESET);
-        System.out.println("\n" + ANSI_RED + "RED" + ANSI_RESET);
-        System.out.println(ANSI_YELLOW + "YELLOW" + ANSI_RESET);
-        System.out.println(ANSI_PURPLE + "PURPLE" + ANSI_RESET);
 
-        choiceColors = scannerColors.next();
 
-        while (!(choiceColors.equals("BLUE") || choiceColors.equals("RED") || choiceColors.equals("YELLOW") || choiceColors.equals("PURPLE"))) {
+       do   {
             System.out.println("\n" + "---- Choice your color ----");
             System.out.print("\n" + ANSI_BLUE + "BLUE" + ANSI_RESET);
             System.out.println("\n" + ANSI_RED + "RED" + ANSI_RESET);
@@ -37,7 +31,7 @@ public class Colors {
             System.out.println(ANSI_PURPLE + "PURPLE" + ANSI_RESET);
 
             choiceColors = scannerColors.next();
-        }
+        }while (!(choiceColors.equals("BLUE") || choiceColors.equals("RED") || choiceColors.equals("YELLOW") || choiceColors.equals("PURPLE")));
 
 
         if (choiceColors.equals("BLUE")) {
