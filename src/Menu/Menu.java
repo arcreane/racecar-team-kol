@@ -33,12 +33,8 @@ import java.util.Scanner;
 
             //condition pour menu Jeu
             if (mainMenu.equals("1")) {
-                //Implémenter la fonction pour jouer
-                System.out.println("le jeu");
-                Race myRace = new Race();
-                manageColor(myRace);
-
-                myRace.startRace();
+                MenuChoixCar menuChoixCar = new MenuChoixCar();
+                menuChoixCar.ChoixCar();
             }
 
             //condition pour afficher les règles
@@ -51,11 +47,5 @@ import java.util.Scanner;
             else if (mainMenu.equals("0")) {
                 System.out.println("Quitter le jeu");
             }
-
-        }
-
-        private static void manageColor(Race myRace) {
-            Colors myColor = Colors.choiceColors();
-            myRace.getCars().setColors(myColor);
         }
     }

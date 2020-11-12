@@ -11,7 +11,7 @@ public class Cars {
     private boolean m_bEventFinished;
     private float Speed;
 
-    
+
     public Cars (){
         a_Random = new Random();
         m_bEventFinished = true;
@@ -19,10 +19,13 @@ public class Cars {
     public float getSpeed() {
         return Speed;
     }
-
     public void setColors(Colors colors) {
         this.colors = colors;
-        System.out.println(colors.getCouleur() + "naonldal,");
+        System.out.println(colors.getCouleur());
+
+    }
+    public void check(){
+
     }
 
     public boolean isEventFinished() {

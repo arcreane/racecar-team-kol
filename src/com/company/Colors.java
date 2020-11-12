@@ -1,7 +1,5 @@
 package com.company;
 
-import Menu.Race;
-import org.w3c.dom.ls.LSOutput;
 
 import java.util.Scanner;
 
@@ -52,6 +50,7 @@ public class Colors {
             return new Colors(ANSI_PURPLE);
         }
     }
+
 
     public String getCouleur() {
         return couleur;
