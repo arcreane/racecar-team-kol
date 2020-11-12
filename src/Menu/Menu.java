@@ -1,5 +1,7 @@
 package Menu;
 
+import com.company.Colors;
+
 import java.util.Scanner;
 
     public class Menu {
@@ -32,8 +34,11 @@ import java.util.Scanner;
             //condition pour menu Jeu
             if (mainMenu.equals("1")) {
                 //Implémenter la fonction pour jouer
-                System.out.println("Le jeu : ");
-                //Mettre la fonction de jeu
+                System.out.println("le jeu");
+                Race myRace = new Race();
+                manageColor(myRace);
+
+                myRace.startRace();
             }
 
             //condition pour afficher les règles
@@ -47,5 +52,10 @@ import java.util.Scanner;
                 System.out.println("Quitter le jeu");
             }
 
+        }
+
+        private static void manageColor(Race myRace) {
+            Colors myColor = Colors.choiceColors();
+            myRace.getCars().setColors(myColor);
         }
     }

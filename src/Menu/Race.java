@@ -1,9 +1,22 @@
 package Menu;
 
 
-public class Race {
+import Car.Cars;
+import com.company.Colors;
 
-    public static void race(){
+public class Race {
+    Cars cars;
+
+    public Race(){
+        cars = new Cars();
+
+    }
+
+    public Cars getCars() {
+        return cars;
+    }
+
+    public void startRace() {
 
     }
 }

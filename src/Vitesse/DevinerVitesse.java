@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class DevinerVitesse {
     String message[] = {"V", "I", "T", "E", "S", "S", "E"};
-    String message2[] = {  message[Random(6)]= "V",
+    String message2[] = {   message[Random(6)]= "V",
                             message[Random(6)]= "I",
                             message[Random(6)]= "T",
                             message[Random(6)]= "E",
@@ -40,8 +40,6 @@ public class DevinerVitesse {
             System.out.print("| " +message2[i]+ " |");
         }
     }
-
-
 
     public static void tabVitesse(String args[]) {
     //affichage / appel des tableaux

@@ -23,10 +23,9 @@ public class Main  extends DevinerVitesse {
                 message[r]= "E"};
 
 
-        //Menu.menu();
-        DevinerVitesse.tabVitesse(message);
-        DevinerVitesse.tabVitesse(message2);
-        Colors.choiceColors();
+        Menu.menu();
+//        DevinerVitesse.tabVitesse(message);
+//        DevinerVitesse.tabVitesse(message2);
 
     }
 }
