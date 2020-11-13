@@ -33,6 +33,6 @@ public class FastCar extends Cars {
     }
 
     public void manageEvent() {
-        parts[r.nextInt(parts.length)].eventsFast();
+        parts[r.nextInt(parts.length*100)/100].eventsFast();
     }
 }
