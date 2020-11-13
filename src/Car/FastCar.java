@@ -12,6 +12,9 @@ public class FastCar extends Cars {
     Random r;
 
     public FastCar() {
+        /**
+         * Fonction qui initialise la vitesse de la voiture
+         */
     //initialisation de la vitesse de la voiture rapide
         this.speed = 100;
         r = new Random();
@@ -21,6 +24,9 @@ public class FastCar extends Cars {
     }
 
     public void check() {
+        /**
+         * fonction qui verifie le pourcentage de chance de tomber en panne
+         */
         if (r.nextInt(101) < 36 ) {
             manageEvent();
         }

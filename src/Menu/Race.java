@@ -15,6 +15,9 @@ public class Race {
     private float travelDistance;
 
     public Race(int choice) {
+        /**
+         * Fonction qui donne un choix de voiture
+         */
     //mode de jeu lent ou rapide
         if (choice == 0) {
             cars = new SlowCar();
@@ -24,11 +27,17 @@ public class Race {
     }
 
     public Cars getCars() {
+        /**
+         * Fonction qui renvoie la voiture choisie
+         */
     //return de la voiture choisie
         return cars;
     }
 
     public void startRace() {
+        /**
+         * Fonction qui active le debut de la course
+         */
     //active parcours
         while (!isFinish) {
         //quand c'est fini :
@@ -44,6 +53,11 @@ public class Race {
     }
 
     public void update() {
+        /**
+         * Fonction qui permet de voir ou en est la course, vitesse de la voiture
+         * distance parcourue, nombre de tour, effectuer cycle accompli
+         * distance restante
+         */
     //affichage a chaque tour de l'etat du parcours
         travelDistance += cars.speed * 1000 / 60;
         if (travelDistance >= distanceLap) {

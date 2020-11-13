@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class Rules {
     public static void rules() {
+        /**
+         * Fonction qui affiche les regles du jeu
+         */
 
         Scanner scanner = new Scanner(System.in);
         String returnMainMenu;

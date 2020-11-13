@@ -10,6 +10,9 @@ public class DevinerVitesse {
     String scrumble;
 
     public String initTab() {
+        /**
+         * Fonction qui creer un tableau pour l'event vitesse
+         */
     //création d'un tableau
         scrumble = "";
         Random r = new Random();
@@ -24,6 +27,9 @@ public class DevinerVitesse {
     }
 
     public void event(SlowCar car){
+        /**
+         * Fonction qui active l'event vitesse et verifie si le jouer reussi ou non
+         */
     //si l'utilisateur rentre le meme mot qui est écrit au dessus, alors il
     //gagne un boost, sinon rien ne change
         System.out.println("Ecrivez ");

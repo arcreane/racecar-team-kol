@@ -10,6 +10,9 @@ public class SlowCar extends Cars {
     Random r;
 
     public SlowCar() {
+        /**
+         * Fonction qui initialise la vitesse de la voiture
+         */
         //initialisation de la vitesse de la voiture lente
         this.speed = 50;
         r = new Random();
@@ -17,6 +20,9 @@ public class SlowCar extends Cars {
     }
 
     public void check() {
+        /**
+         * Fonction qui donne le pourcentage de l'event vitesse
+         */
         if (r.nextInt(101) < 101){
             manegeEvent();
         }
@@ -24,6 +30,9 @@ public class SlowCar extends Cars {
     }
 
     private void manegeEvent() {
+        /**
+         * Fonction qui creer l'event vitesse
+         */
         //appel le mot
         devinerVitesse.initTab();
         //rentrer mot pour boost

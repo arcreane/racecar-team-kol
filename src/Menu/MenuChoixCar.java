@@ -10,6 +10,9 @@ public class MenuChoixCar {
     Race race;
 
     public void ChoixCar() {
+        /**
+         * Fonction pour coisir le type de voiture que l'on souhaite
+         */
     //choix style de voiture
         Scanner scanner = new Scanner(System.in);
         String mainMenu;

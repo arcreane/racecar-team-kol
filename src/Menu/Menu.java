@@ -6,6 +6,9 @@ import java.util.Scanner;
     public class Menu {
 
         public static void menu() {
+            /**
+             * Fonction qui creer le menu
+             */
         //création du menu
             Scanner scanner = new Scanner(System.in);
             String mainMenu;

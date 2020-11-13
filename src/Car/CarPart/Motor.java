@@ -7,8 +7,11 @@ import java.util.Scanner;
 
 public class Motor extends CarPart {
 
-
     public String initTab() {
+        /**
+         * fonction pour initier le tableau qui contiendra les chiffres utiliser pour réparer le moteur.
+        **/
+
         int maxTab = 5;
         String nbList = "";
         Random r = new Random();
@@ -20,6 +23,10 @@ public class Motor extends CarPart {
 
     @Override
     public void eventsFast() {
+        /**
+         * Fonction pour vérifier que la suite de nombre donner par initTab correspond a celle ecrite par le joueur
+         * sinon il recommence.
+         */
         super.eventsFast();
 
         String nbList = initTab();

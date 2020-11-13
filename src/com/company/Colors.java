@@ -4,6 +4,9 @@ package com.company;
 import java.util.Scanner;
 
 public class Colors {
+    /**
+     * Fonction qui initalise les couleurs.
+     */
     //création couleurs
     public static final String ANSI_RESET = "\u001B[0m";
     public static final String ANSI_PURPLE = "\u001B[35m";
@@ -17,6 +20,9 @@ public class Colors {
     }
 
     public static Colors choiceColors() {
+        /**
+         * Fonction qui permet au joueur de choisir sa couleur
+         */
     //permet de choisir couleurs
         Scanner scannerColors = new Scanner(System.in);
         String choiceColors;
@@ -45,6 +51,9 @@ public class Colors {
 
 
     public String getCouleur() {
+        /**
+         * Fonction qui retourne la couleur.
+         */
     //retourne la couleur
         return couleur;
     }
