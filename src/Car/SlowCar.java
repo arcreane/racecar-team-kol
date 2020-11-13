@@ -7,6 +7,7 @@ import java.util.Random;
 
 public class SlowCar extends Cars {
     DevinerVitesse devinerVitesse;
+
     Random r;
 
     public SlowCar() {
