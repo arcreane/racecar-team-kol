@@ -61,5 +61,6 @@ public class Race {
             }
             nbCycle += 1;
         }
+        cars.check();
     }
 }

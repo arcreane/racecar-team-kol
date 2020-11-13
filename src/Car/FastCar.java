@@ -1,33 +1,31 @@
 package Car;
 
+import Car.CarPart.CarPart;
 import Car.CarPart.Motor;
+import Car.CarPart.Wheel;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class FastCar extends Cars {
-    Motor motor;
-    double random = Math.random();
-    Cars cars;
+    CarPart[] parts;
+    Random r;
 
-        public FastCar(){
-            this.speed = 100;
+    public FastCar() {
+        this.speed = 100;
+        r = new Random();
+        parts = new CarPart[2];
+        parts[0] = new Motor();
+        parts[1] = new Wheel();
+    }
+
+    public void check() {
+        if (r.nextInt(101) < 36 ) {
+            manageEvent();
         }
+    }
 
-        public void check(){
-            motor = new Motor();
-            //String nbList = motor.initTab();
-            String nbList = "bonjour";
-            System.out.println(nbList);
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("Recopie la suite");
-            String comparaison = scanner.nextLine();
-
-            while (!(comparaison.equals(nbList))) {
-                System.out.println("retry");
-                comparaison = scanner.nextLine();
-            }
-
-            System.out.println("bravo");
-        }
-
+    public void manageEvent() {
+        parts[r.nextInt(parts.length)].eventsFast();
+    }
 }
