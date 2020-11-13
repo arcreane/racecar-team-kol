@@ -12,6 +12,7 @@ public class FastCar extends Cars {
     Random r;
 
     public FastCar() {
+    //initialisation de la vitesse de la voiture rapide
         this.speed = 100;
         r = new Random();
         parts = new CarPart[2];

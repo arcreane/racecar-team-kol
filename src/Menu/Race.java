@@ -1,15 +1,12 @@
 package Menu;
 
-
 import Car.Cars;
 import Car.FastCar;
 import Car.SlowCar;
-import com.company.Colors;
-
-import java.io.Console;
 
 public class Race {
-    Cars cars;
+
+    public Cars cars;
     boolean isFinish = false;
     float distanceLap = 10000;
     int currentLap = 0;
@@ -18,6 +15,7 @@ public class Race {
     private float travelDistance;
 
     public Race(int choice) {
+    //mode de jeu lent ou rapide
         if (choice == 0) {
             cars = new SlowCar();
         } else {
@@ -26,11 +24,14 @@ public class Race {
     }
 
     public Cars getCars() {
+    //return de la voiture choisie
         return cars;
     }
 
     public void startRace() {
+    //active parcours
         while (!isFinish) {
+        //quand c'est fini :
             cars.write();
             update();
             try {
@@ -43,6 +44,7 @@ public class Race {
     }
 
     public void update() {
+    //affichage a chaque tour de l'etat du parcours
         travelDistance += cars.speed * 1000 / 60;
         if (travelDistance >= distanceLap) {
             float superiorTravelDistance = travelDistance - distanceLap;

@@ -4,8 +4,7 @@ package com.company;
 import java.util.Scanner;
 
 public class Colors {
-
-
+    //création couleurs
     public static final String ANSI_RESET = "\u001B[0m";
     public static final String ANSI_PURPLE = "\u001B[35m";
     public static final String ANSI_YELLOW = "\u001B[33m";
@@ -18,10 +17,9 @@ public class Colors {
     }
 
     public static Colors choiceColors() {
+    //permet de choisir couleurs
         Scanner scannerColors = new Scanner(System.in);
         String choiceColors;
-
-
 
        do   {
             System.out.println("\n" + "---- Choice your color ----");
@@ -31,7 +29,7 @@ public class Colors {
             System.out.println(ANSI_PURPLE + "PURPLE" + ANSI_RESET);
 
             choiceColors = scannerColors.next();
-        }while (!(choiceColors.equals("BLUE") || choiceColors.equals("RED") || choiceColors.equals("YELLOW") || choiceColors.equals("PURPLE")));
+        } while (!(choiceColors.equals("BLUE") || choiceColors.equals("RED") || choiceColors.equals("YELLOW") || choiceColors.equals("PURPLE")));
 
 
         if (choiceColors.equals("BLUE")) {
@@ -47,6 +45,7 @@ public class Colors {
 
 
     public String getCouleur() {
+    //retourne la couleur
         return couleur;
     }
 }
